@@ -1,0 +1,43 @@
+
+body{
+  font-family: Georgia, Arial;
+  Margin: 30px;
+  background-color: #f5f3f2;
+}
+Header{
+  Background-color:#c9ada7;
+  Text-align: Center;
+  padding: 30px;
+}
+table{
+  width: 60%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+h2{
+  background-color:#dddddd;
+  border-bottom: 2px solid;
+}
+th{
+  color: black;
+  padding: 10px;
+}
+td{
+  padding:10px;
+  border:1px solid;
+}
+footer{
+  text-align: center;
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+nav{
+  list-style: none;
+  background: black;
+  padding: 10px;
+}
+
+nav a{
+  color:white;
+}
