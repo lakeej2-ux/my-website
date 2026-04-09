@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Puppy Yoga</title>
+
+  <!-- Materialize CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+
+  <!-- Google Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <style>
+    body {
+      background-color: #fdf6f0;
+    }
+    h1, h5 {
+      font-family: Arial, sans-serif;
+    }
+    .hero {
+      padding: 30px;
+      text-align: center;
+      background-color: #ffe0b2;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <div class="hero">
+    <h1>🐶 Puppy Yoga 🧘‍♀️</h1>
+    <h5>Relax, Stretch, and Play with Puppies!</h5>
+  </div>
+
+  <!-- Carousel -->
+  <div class="container">
+    <h4 class="center">Our Happy Puppies</h4>
+
+    <div class="carousel carousel-slider center">
+      <div class="carousel-item orange lighten-2 white-text" href="#one!">
+        <h5>Playful Pups</h5>
+        <img src="https://placedog.net/800/400?id=1">
+      </div>
+
+      <div class="carousel-item amber lighten-2 white-text" href="#two!">
+        <h5>Yoga Time</h5>
+        <img src="https://placedog.net/800/400?id=2">
+      </div>
+
+      <div class="carousel-item deep-orange lighten-2 white-text" href="#three!">
+        <h5>Relax & Cuddle</h5>
+        <img src="https://placedog.net/800/400?id=3">
+      </div>
+    </div>
+  </div>
+
+  <!-- Collapsible -->
+  <div class="container">
+    <h4 class="center">Class Information</h4>
+
+    <ul class="collapsible popout">
+      <li>
+        <div class="collapsible-header">
+          <i class="material-icons">event</i>Class Schedule
+        </div>
+        <div class="collapsible-body">
+          <span>Monday, Wednesday, Friday – 6PM<br>Saturday – 10AM</span>
+        </div>
+      </li>
+
+      <li>
+        <div class="collapsible-header">
+          <i class="material-icons">attach_money</i>Pricing
+        </div>
+        <div class="collapsible-body">
+          <span>$15 per session or $50 monthly unlimited</span>
+        </div>
+      </li>
+
+      <li>
+        <div class="collapsible-header">
+          <i class="material-icons">pets</i>About the Puppies
+        </div>
+        <div class="collapsible-body">
+          <span>All puppies are friendly, vaccinated, and available for adoption!</span>
+        </div>
+      </li>
+
+      <li>
+        <div class="collapsible-header">
+          <i class="material-icons">help</i>FAQs
+        </div>
+        <div class="collapsible-body">
+          <span>Bring a yoga mat, water, and be ready for puppy cuddles 🐾</span>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Footer -->
+  <footer class="page-footer orange lighten-2">
+    <div class="container center">
+      <p>© 2026 Puppy Therapy</p>
+    </div>
+  </footer>
+
+  <!-- Materialize JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  <!-- Initialization Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+
+      // Carousel init
+      var carousels = document.querySelectorAll('.carousel');
+      M.Carousel.init(carousels, {
+        fullWidth: true,
+        indicators: true
+      });
+
+      // Collapsible init
+      var collapsibles = document.querySelectorAll('.collapsible');
+      M.Collapsible.init(collapsibles);
+
+    });
+  </script>
+
+</body>
+</html>
