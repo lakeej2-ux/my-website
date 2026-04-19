@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<title> Puppy Therapy</title>
+  <link rel="stylesheet" href="styles.css">
+ </head>
+  
+  <body>
+    <header>
+      <h1>Puppy Therapy</h1>
+      <p>We want you to be able to have the best experience!</p>
+    </header>
+    
+ <nav>
+
+  <div class="navbar">  
+   <a href="index.html">Home</a>
+   <a href="content.html">About</a>
+  <a href="content2.html">Benefits</a>
+  <a href="maternalize.html">More</a>
+  <a href="Maternalize1.html">Quick Links</a>
+  <a href="jQuery.html">jQuery</a>
+  <div>
+    </nav>
+
+
+<body>
+
+<h1>Puppy Yoga</h1>
+
+<!-- Schedule Section -->
+<button id="toggleSchedule">Show/Hide Class Schedule</button>
+
+<div id="schedule">
+  <h3>Class Schedule</h3>
+  <p>Monday - 8:00 AM</p>
+  <p>Wednesday - 7:00 AM</p>
+  <p>Saturday - 10:00 AM</p>
+</div>
+
+<!-- Fade section -->
+<button id="fadeBtn">Fade Puppy Info</button>
+<p id="fadeText">
+  Puppy yoga combines relaxation with playful puppy interaction.
+</p>
+
+<!-- Highlight paragraph -->
+<p id="puppyText">
+  Puppy yoga is a fun and relaxing activity where participants practice yoga
+  while puppies roam around and interact with them.
+</p>
+<button id="highlightBtn">Highlight Text</button>
+
+<!-- jQuery script INSIDE HTML -->
+<script>
+$(document).ready(function(){
+
+  // 1. Hide box on click
+  $(".box").click(function(){
+    $(this).hide();
+  });
+
+  // 2. Fade effect
+  $("#fadeBtn").click(function(){
+    $("#fadeText").fadeToggle(500);
+  });
+
+  // 3. Highlight paragraph
+  $("#highlightBtn").click(function(){
+    $("#puppyText").toggleClass("highlight");
+  });
+
+});
+</script>
+
+</body>
+</html>
